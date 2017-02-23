@@ -1,8 +1,14 @@
 {
-  "name": "test",
-  "version": "0.0.1",
-  "main": "index.js",
+  "private": true,
   "devDependencies": {
-    "aws-sdk": "2.0.23"
-  }
+    "json-loader": "^0.5.4",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "amazon-cognito-identity-js": "^1.16.0"
+  },
+  "scripts": {
+  "build": "webpack"
+},
+"build": "npm run build:css"
 }

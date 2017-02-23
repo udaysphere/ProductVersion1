@@ -1,0 +1,36 @@
+<html>
+<head>
+
+    <script src="jquery-1.7.1.js"></script>
+    <script src="jquery.cookie.js"></script>
+    <script>
+        function login() {
+
+            $.ajax({
+                type: 'GET',
+                url: 'https://vkiya50if8.execute-api.us-west-2.amazonaws.com/test',
+                success: function (responseData, textStatus, jqXHR) {
+                    //$.cookie('requestToken', responseData.Token);
+                    //window.location.href = "home.html";
+
+                    console.log(responseData);
+                },
+                error: function (responseData, textStatus, errorThrown) {
+
+                }
+            });
+
+            
+        }
+    </script>
+</head>
+<body>
+<table>
+<tr><td>User Name</td><td><input type="text"></td></tr>
+<tr><td>Password </td><td><input type="text"></td></tr>
+<tr><td></td><td><button onclick="login()">Login</button>
+</td></tr>
+</table>
+    
+</body>
+</html>
